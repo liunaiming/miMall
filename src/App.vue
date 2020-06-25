@@ -1,35 +1,20 @@
 <template>
   <div id="app">
+
     <router-view></router-view>
+        hello
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 // import axios from 'axios'
-import jsonp from 'jsonp'
+// import jsonp from 'jsonp'
 export default {
-  name: 'App',
-  components: {
+  name: 'app',
+  components:{
 
-  },
-  data(){
-    return {
-      age:30,
-      data:''
-    }
-  },
-
-   mounted(){
-  let url = "/activity";
-  jsonp(url,(error,res)=>{
-    if(error){
-      let result = res
-      this.data = result
-    }
-    
-})
- } 
+  }
 }
 </script>
 
